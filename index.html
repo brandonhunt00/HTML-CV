@@ -25,14 +25,43 @@
                 src="https://www.youtube.com/embed/qptTA60B6RU"
                 title="Vídeo de apresentação"
                 frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
         </iframe>
 
         <h3>Site preferido</h3>
         <iframe width="320" height="200"
-                src="favorita.html"
                 title="Site preferido"
-                frameborder="0">
+                frameborder="0"
+                srcdoc='
+                  <!DOCTYPE html>
+                  <html lang="pt-BR">
+                  <head>
+                    <meta charset="UTF-8">
+                    <style>
+                      body {
+                        font-family: Arial, sans-serif;
+                        padding: 12px;
+                        margin: 0;
+                      }
+                      h3 {
+                        margin-top: 0;
+                      }
+                      ul {
+                        padding-left: 20px;
+                      }
+                    </style>
+                  </head>
+                  <body>
+                    <h3>Minhas páginas preferidas</h3>
+                    <ul>
+                      <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                      <li><a href="https://www.netflix.com" target="_blank">Netflix</a></li>
+                      <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                    </ul>
+                  </body>
+                  </html>
+                '>
         </iframe>
       </td>
 
